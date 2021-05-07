@@ -1,0 +1,58 @@
+/* Source for rgb color codes: https://www.w3schools.com/colors/colors_picker.asp */
+/* Source for font families/names: https://www.w3schools.com/css/css_font.asp */
+/* Source for CSS margins: https://www.w3schools.com/css/css_margin.asp */
+
+/* details added to elements with class "jumbotron" */
+/* sets: background color; font to "Lucida Handwriting"; bottom margin to 120px; and a shadow for text */
+.jumbotron {
+    background-color: rgb(204, 153, 255);
+    font-family: "Lucida Handrwiting", "Brush Script M7", cursive;
+    margin-bottom: 120px;
+    /* Source for text shadows: https://www.w3schools.com/css/css_text_shadow.asp */
+    text-shadow: 2px 2px 5px purple;
+}
+
+/* details added to elements with tag "body" */
+/* sets: text to align to center of page; background color */
+body {
+    /* Source for CSS aligning body in center: https://www.w3schools.com/css/css_align.asp */
+    text-align: center;
+    background-color: rgb(255, 204, 255);
+}
+
+/* details added to text bodies with "rounded" borders */
+/* sets: background color; border to "outset" style; border color */
+.rounded {
+    background-color: rgb(255, 102, 255);
+    /* Source for CSS border style code: https://www.w3schools.com/css/css_border.asp */
+    border-style: outset;
+    /* Source for CSS border color code: https://www.w3schools.com/css/css_border_color.asp */
+    border-color: rgb(255, 150, 255);
+}
+
+/* details added to all "input" tag elements */
+/* sets: background color */
+input {
+    background-color: rgb(204, 153, 255);
+}
+
+/* details added to all Bootstrap button elements */
+/* sets: background color */
+.btn {
+    background-color: rgb(255, 50, 255);
+}
+
+/* details added to all images/photos */
+/* sets: left, right, and top margins to 10px */
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* details added to list in "miscellaneous" page of miscellaneous facts */
+/* sets: margin to 20 px */
+ul {
+    margin: 20px;
+}
+

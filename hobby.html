@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Source for shadows (included in several elements): https://getbootstrap.com/docs/5.0/utilities/shadows/-->
+
+<html lang="en">
+    <head>
+        <!-- Startup section from Bootstrap website -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <!-- Declare tab name -->
+        <title>My Hobbies</title>
+        <script>
+        // Source for Javascript comments: https://www.w3schools.com/js/js_comments.asp
+
+        // Assign text for violin hobby to string variable
+        let hobby1 = "I have been playing the violin since I was 4 years old, and it's definitely one of my favorite and most longstanding hobbies. I've played in multiple local orchestras, including my high school's orchestra. I now find myself interested in expanding my violin playing into other genres such as jazz and Indian classical music.";
+        // Assign text for percussion hobby to string variable
+        let hobby2 = "I first got into playing percussion in 5th grade, and I've been in love with it ever since. Over the years, I've developed my improvisation and musicality; I've played in multiple rock bands, concert bands, and jazz groups. Nowadays, I mostly focus on playing jazz, which definitely can challenge both how you think about and play drums.";
+        // Assign text for travelling hobby to string variable
+        let hobby3 = "Every year, my family and I go on some trip to a place we've never been before. I've seen Shinjuku Station in Japan - the busiest train station in the world - and hiked to the top of the Alps. I love travelling because, everywhere I go, I always learn something new, whether it's about food, architecture, or music. And to top it off, I get to experience those unique environments for myself.";
+        // Assign text for art hobby to string variable
+        let hobby4 = "Whenever I need to take a break from doing homework or chores, I'll turn to doodling or writing music, or any other type of art. I've always been obssessed with maps and images; I also love art that exhibits powerful emotions, like melancholic or gothic art. I'm currently absorbed in bringing this obsession with drama into my musical compsotions.";
+
+            // Source for implementation of innerHTML: https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+            document.addEventListener('DOMContentLoaded', function() {
+                // If the "violin" button is pressed, print the text involving my violin hobby in the declared text box
+                document.getElementById('violin').addEventListener("click", function () {
+                    document.getElementById("text").innerHTML = hobby1;});
+                // If the "percussion" button is pressed, print the text involving my percussion hobby in the declared text box
+                document.getElementById('percussion').addEventListener("click", function () {
+                    document.getElementById("text").innerHTML = hobby2;});
+                // If the "travelling" button is pressed, print the text involving my travelling hobby in the declared text box
+                document.getElementById('travelling').addEventListener("click", function () {
+                    document.getElementById("text").innerHTML = hobby3;});
+                // If the "art" button is pressed, print the text involving my art hobby in the declared text box
+                document.getElementById('art').addEventListener("click", function () {
+                    document.getElementById("text").innerHTML = hobby4;});
+            });
+        </script>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <!-- Title of web page -->
+        <!-- Source for how to use jumbotron: https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
+        <div class="jumbotron">
+            <!-- source for <br> tag: https://www.w3schools.com/tags/tag_br.asp -->
+            <!-- source for "display-1": https://getbootstrap.com/docs/5.0/content/typography/ -->
+            <br><h1 class="display-1">Favorite Hobbies</h1><br>
+        </div>
+        <p>
+            <!-- Buttons for accessing other web pages -->
+            <!-- Source for Bootstrap button: https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
+            <a class="btn btn-primary" href="index.html" role="button">Home Page</a>
+            <a class="btn btn-primary" href="intro.html" role="button">Introduction</a>
+            <a class="btn btn-primary" href="misc.html" role="button">Miscellaneous Facts</a>
+        </p>
+        <!-- Source for HTML <hr> utilization: https://www.w3schools.com/tags/tag_hr.asp -->
+        <hr>
+        <!-- Text box for web page content, including info on subject involving me -->
+        <!-- Source for Bootstrap containers: https://getbootstrap.com/docs/5.0/layout/containers/ -->
+        <!-- Source for Bootstrap borders: https://getbootstrap.com/docs/5.0/utilities/borders/ -->
+        <div class="shadow p-3 mb-5 rounded container">
+            <h3>Welcome All!</h3>
+            <!-- Source for HTML label utilization: https://www.w3schools.com/tags/tag_label.asp -->
+            <label>Which of my hobbies would you like to learn about?</label>
+            <br>
+            <!-- buttons for toggling which hobby user wants to learn about -->
+                <input type="submit" id="violin" value="Violin">
+                <input type="submit" id="percussion" value="Percussion">
+                <input type="submit" id="travelling" value="Travelling">
+                <input type="submit" id="art" value="Art">
+            <br>
+        </div>
+        <!-- Text container for info on selected hobby -->
+        <div class="shadow p-3 mb-5 rounded container">
+            <!-- Source for HTML italics tag utilization information: https://www.w3schools.com/tags/tag_i.asp -->
+            <i id="text"></i>
+        </div>
+        <!-- Multiple images for all hobbies covered in wep page -->
+        <!-- Source for HTML image tag utilization information: https://www.w3schools.com/tags/tag_img.asp -->
+        <img class="shadow p-3 mb-5" src="images/IMG_1386.jpg" alt="My violin" width="302" height="403">
+        <img class="shadow p-3 mb-5" src="images/IMG_1388.jpg" alt="My drumset" width="302" height="403">
+        <img class="shadow p-3 mb-5" src="images/100_0319.jpeg" alt="Zebra in Tanzania" width="400" height="300">
+        <img class="shadow p-3 mb-5" src="images/IMG_1387.jpg" alt="Pastel drawing of Watermelons" width="302" height="403">
+    </body>
+</html>
